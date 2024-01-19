@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {                                                           
+	font-family: charlieUltra;
+	src: url(fonts/charlie-display-ultra.woff2) format("woff2"),
+         url(fonts/charlie-display-ultra.woff)  format("woff") ;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: GreatSejagad;
+	src: url(fonts/Great_Sejagad.woff2) format("woff2"),                 
+         url(fonts/Great_Sejagad.woff)  format("woff") ;
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+html {
+    background: url(image/noir.png) no-repeat; 
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/* LOGO */
+
+.LOGOA {
+    width: 6%;
+}
+
+/* PARALLAX */
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#text {
+    position: absolute;
+    font-size: 7em;
+    color: #fff;
+    font-family: GreatSejagad;
+    letter-spacing: 1.1px;
+    text-shadow:  2px 4px 5px #333;
+}
+
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.parallax img#immeuble1{
+    position: fixed;
+    width: 40%;
+    margin: 260px -150px;
+}
+
+.parallax img#immeuble2{
+    position: fixed;
+    width: 30%;
+    margin: 295px 1500px;
+}
+
+.parallax img#arbre1 {
+    position: fixed;
+    width: 25%;
+    margin: 490px 1050px;
+}
+
+.parallax img#arbre2 {
+    position: fixed;
+    width: 25%;
+    margin: 490px 230px;
+}
+
+.parallax img#gens1{
+    position: fixed;
+    width: 20%;
+    margin: 610px 650px;
+}
+
+.parallax img#gens2{
+    position: fixed;
+    width: 20%;
+    margin: 645px 950px;
+}
+
+.parallax img#gens3{
+    position: fixed;
+    width: 20%;
+    margin: 645px 1400px;
+}
+
+/* texte explicatif */
+
+.sec {
+    position: relative; 
+    background: #000;
+    padding: 100px 200px ;
+}
+
+.sec h2 {
+    font-size: 5rem;
+    letter-spacing: 1.1px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+    font-family: GreatSejagad;
+}
+
+.sec p {
+    font-size: 1.7rem;
+    letter-spacing: 1.1px;
+    color: #a1a1a1;
+    font-weight: 300;
+    text-align: justify;
+    font-family: charlieUltra;
+}
+
+/* 3D */
+
+.card {
+    height: 720px;
+    width: 1080px;
+    background-image: url(image/gar3.png);
+    background-size: cover;
+    border-radius: 30px;
+    display: flex;
+    transform-style: preserve-3d;
+    margin: 200px;
+}
+
+.card1 {
+    height: 720px;
+    width: 1080px;
+    background-image: url(image/gar2.png);
+    background-size: cover;
+    border-radius: 30px;
+    display: flex;
+    transform-style: preserve-3d;
+    margin: 200px;
+}
+
+.card2 {
+    height: 720px;
+    width: 1080px;
+    background-image: url(image/gar4.png);
+    background-size: cover;
+    border-radius: 30px;
+    display: flex;
+    transform-style: preserve-3d;
+    margin: 200px;
+}
+
+.card3 {
+    height: 720px;
+    width: 1080px;
+    background-image: url(image/gar.png);
+    background-size: cover;
+    border-radius: 30px;
+    display: flex;
+    transform-style: preserve-3d;
+    margin: 200px;
+}
+
+.card4 {
+    height: 720px;
+    width: 1080px;
+    background-image: url(image/FINALE\ GARAGE.png);
+    background-size: cover;
+    border-radius: 30px;
+    display: flex;
+    transform-style: preserve-3d;
+    margin: 200px;
+}
+
+.card5 {
+    height: 720px;
+    width: 1080px;
+    background-image: url(image/IMG_0881.PNG);
+    background-size: cover;
+    border-radius: 30px;
+    display: flex;
+    transform-style: preserve-3d;
+    margin: 200px;
+}
+
+.card6 {
+    height: 720px;
+    width: 1080px;
+    background-image: url(image/Cartedevisite.png);
+    background-size: cover;
+    border-radius: 30px;
+    display: flex;
+    transform-style: preserve-3d;
+    margin: 200px;
+    border: #fff solid 3px;
+}
+
+iframe {
+    height: 720px;
+    width: 1080px;
+    background-size: cover;
+    border-radius: 30px;
+    display: flex;
+    margin: 200px;
+    border: 5px solid white;
+}
+
